@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Empty Islands: The Bacterial Ecology of Infection &amp; Antibiotic Failure</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Brendan J. Kelly, MD, MS" />
+    <meta name="date" content="2022-02-14" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link rel="stylesheet" href="xaringan-themer-inferno-grids-fade.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+exclude: true
+
+
+
+
+
+---
+class: top left hide-count
+background-image: url(img/giorgio-trovato-IclGoWB6wEY-unsplash.jpg)
+background-size: cover
+
+.move-top20[
+.title-text[Empty Islands]  
+.title-subtext[&lt;span style='font-size:0.9em'&gt;The Bacterial Ecology of Infection &amp; Antibiotic Failure&lt;/span&gt;]  
+]  
+  
+.callout-url-leftcorner[
+.title-nametext[
+Brendan J. Kelly, MD, MS  
+Infectious Diseases &amp; Epidemiology  
+University of Pennsylvania  
+14 February 2022  &lt;!-- 14 February 2022 --&gt;   
+]
+]
+
+.footnote-right[&lt;span style='color: white'&gt;photo: Giorgio Trovato @unsplash&lt;/span&gt;]  
+
+
+
+---
+
+## Disclosures  
+
+.pad-left[  
+
+- No conflicts of interest.  
+
+- Research supported by:
+
+    - NIAID K23 AI121485  
+    
+    - CDC BAA 200-2016-91964  
+    
+    - CDC BAA 200-2016-91937  
+    
+    - CDC BAA 200-2018-02919  
+    
+    - CDC BAA 200-2021-10986   
+
+]
+
+
+
+---
+
+## Objectives    
+  
+.pad-left[  
+  
+- How do antibiotics fail?  
+  
+    - failure of pathogen identification → wrong antibiotic       
+    
+    - high-grade phenotypic resistance or inadequate source control    
+    
+    - &lt;u&gt;post-antibiotic repopulation&lt;/u&gt;  
+    
+- Bacterial ecology of infection: VAP, _C. difficile_  
+  
+- Microbiome change during &amp; after antibiotics   
+  
+- Engineering post-antibiotic repopulation      
+  
+    
+]  
+
+
+
+---
+class: top left hide-count
+background-image: url(img/yudi-haryasa-HEpUyHwJuzQ-unsplash.jpeg)
+background-size: cover
+
+## &lt;span style='color: #093b85;'&gt;Introduction: Island Ecology&lt;/span&gt;
+
+
+.footnote-right[&lt;span style='color: white'&gt;photo: Yudi Haryasa @unsplash&lt;/span&gt;]  
+
+
+
+---
+class: hide-count
+
+.pull-left[
+&lt;img src="img/tibg_title_authors.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/tibg_figure7_equilibrium_model.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+&lt;img src="img/wilson_simberloff_ecology_1969_fig3map.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/wilson_simberloff_ecology_1969_tab1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.footnote-left[Macarthur &amp; Wilson 1967; Simberloff &amp; Wilson _Ecology_ 1969]
+
+
+
+---
+class: hide-count
+
+.pull-left[
+
+&lt;img src="img/wilson_simberloff_ecology_1969_fig2.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.pull-right[
+&lt;img src="img/wilson_simberloff_ecology_1969_fig8.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.footnote-left[Wilson &amp; Simberloff _Ecology_ 1969]
+
+
+
+---
+class: hide-count
+
+.pull-left[
+
+&lt;img src="img/wilson_simberloff_ecology_1969_fig8_crop.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.pull-right[
+&lt;img src="img/simberloff_wilson_ecology_1969_fig1_fig2.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.footnote-left[Wilson &amp; Simberloff _Ecology_ 1969; Simberloff &amp; Wilson _Ecology_ 1969]
+
+
+
+---
+class: hide-count
+
+.pull-left[
+&lt;img src="img/wilson_simberloff_ecology_1969_fig8_crop.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+&lt;img src="img/icu_patient_and_doc_crop.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.footnote-left[Wilson &amp; Simberloff _Ecology_ 1969; photo: _New York Times_]
+
+
+
+---
+
+## Repopulation &amp; Recurrent Infection      
+  
+.pad-left[  
+  
+- Why does &lt;u&gt;post-antibiotic repopulation&lt;/u&gt; matter?    
+
+- Failed repopulation risks recurrent infection:  
+
+    - healthy subjects time to post-antibiotic repopulation ~ 3 months
+    
+    - recurrent _C. difficile_ infection (R-CDI): ~ 20% post-treatment recurrence
+  
+    - bloodstream, respiratory and urinary tract infections?     
+    
+    
+]  
+
+.footnote-left[Blaser _Science_ 2016; Raymond et al _ISME J_ 2016; Kelly &amp; Tebas _Chest_ 2018; Al-Hasan et al _J Infect_ 2010; Jensen et al _CMI_ 2011; Munoz et al _CMI_ 2016]  
+
+
+---
+exclude: true
+
+## Repopulation &amp; Recurrent Infection      
+  
+.pad-left[  
+  
+- Study of post-infection recurrence:  
+
+    - 10,855 heme-onc patients admitted to HUP from 2010-2011      
+
+    - 7819 (72%) with blood, respiratory, or urine culture obtained
+    
+    - 1042 (9.6%) +blood cx, 215 (2.0%) +resp cx, 845 (7.8%) +urine cx  
+    
+    - same genus recurrence: 286 (28.6%) blood, 58 (29.0%) resp, 272 (34.0%) urine  
+    
+    - other genus recurrence: 208 (20.8%) blood, 35 (17.5%) resp, 88 (11.0%) urine  
+    
+    - examine time to post-infection recurrence ...       
+  
+    
+]  
+
+.footnote-left[Ziegler MZ et al. Submitted.]  
+
+
+---
+
+## Repopulation &amp; Recurrent Infection      
+  
+.pad-left[  
+  
+- Study of post-infection recurrence:  
+
+    - 10,855 heme-onc patients admitted to HUP from 2010-2021      
+
+    - 7819 (72%) with blood, respiratory, or urine culture obtained:  
+    
+<div id="pmryibaiii" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#pmryibaiii .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#pmryibaiii .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#pmryibaiii .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#pmryibaiii .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#pmryibaiii .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pmryibaiii .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pmryibaiii .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#pmryibaiii .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pmryibaiii .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pmryibaiii .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pmryibaiii .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pmryibaiii .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#pmryibaiii .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#pmryibaiii .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pmryibaiii .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pmryibaiii .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pmryibaiii .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pmryibaiii .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pmryibaiii .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pmryibaiii .gt_left {
+  text-align: left;
+}
+
+#pmryibaiii .gt_center {
+  text-align: center;
+}
+
+#pmryibaiii .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#pmryibaiii .gt_font_normal {
+  font-weight: normal;
+}
+
+#pmryibaiii .gt_font_bold {
+  font-weight: bold;
+}
+
+#pmryibaiii .gt_font_italic {
+  font-style: italic;
+}
+
+#pmryibaiii .gt_super {
+  font-size: 65%;
+}
+
+#pmryibaiii .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Infection</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Total Subjects</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Recurrent - Same Genus</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Recurrent - Different Genus</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Bloodstream</td>
+<td class="gt_row gt_left">1042 (9.6%)</td>
+<td class="gt_row gt_left">286 (28.6%)</td>
+<td class="gt_row gt_left">208 (20.8%)</td></tr>
+    <tr><td class="gt_row gt_left">Respiratory</td>
+<td class="gt_row gt_left">215 (2.0%)</td>
+<td class="gt_row gt_left">58 (29.0%)</td>
+<td class="gt_row gt_left">35 (17.5%)</td></tr>
+    <tr><td class="gt_row gt_left">Urine</td>
+<td class="gt_row gt_left">845 (7.8%)</td>
+<td class="gt_row gt_left">272 (34.0%)</td>
+<td class="gt_row gt_left">88 (11.0%)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+  
+- Examine time to post-infection recurrence ...       
+  
+]  
+
+.footnote-left[Ziegler MZ et al. Submitted.]  
+
+
+---
+background-image: url(figs/p_hurdle_gap_same_vs_other_genus_tp.png)
+background-size: contain
+
+
+
+.footnote-left[Ziegler MZ et al. Submitted.]
+
+
+---
+background-image: url(figs/p_hurdle_gap_same_genus_f_cxtype_r_genus_after14_tp.png)
+background-size: contain
+
+
+
+.footnote-left[Ziegler MZ et al. Submitted.]
+
+
+
+---
+
+## Repopulation &amp; Novel Therapies      
+  
+.pad-left[  
+  
+- Why does &lt;u&gt;post-antibiotic repopulation&lt;/u&gt; matter?    
+
+- Repopulation → novel therapies:  
+
+    - Fecal microbiota transplant (FMT) for _C. difficile_    
+    
+    - FMT to overcome resistance / potentiate therapies for cancer:  
+
+        → immune checkpoint inhibitors (e.g., anti-PD-1)  
+    
+        → chimeric antigen receptor (CAR-T) therapies
+    
+    - FMT with synthetic bacteria for metabolic disease    
+    
+]  
+
+.footnote-left[Davar et al _Science_ 2021; Schubert et al _Frontiers Immun_ 2021; Cubillos-Ruiz et al _Nat Rev Drug Disc_ 2021]  
+
+
+
+---
+
+## Work to Understand Repopulation        
+  
+.pad-left[  
+  
+- Bacterial ecology of infection:
+
+    - ventilator-associated pneumonia (VAP)  
+    
+    - _C. difficile_ infection  
+  
+- Microbiome change during &amp; after antibiotics    
+  
+- Engineering post-antibiotic repopulation:  
+
+    - antibiotic conditioning &amp; transplant  
+    
+    - post-induction consolidation therapy with bacteriophage    
+  
+]  
+
+
+---
+class: top left hide-count
+background-image: url(img/cdc-aQOe0Ri267U-unsplash.jpg)
+background-size: cover
+
+.move-bottom20[
+## &lt;span style='color: #fce60e'&gt;The Bacterial Ecology of Infection&lt;/span&gt;  
+]  
+
+
+.footnote-right[&lt;span style='color: white'&gt;photo: CDC @unsplash&lt;/span&gt;]  
+
+
+
+---
+
+## The Bacterial Ecology of Infection          
+  
+.pad-left[  
+  
+- What is the shape of the bacterial community during bacterial infection?    
+  
+    - ventilator-associatec pneumonia (VAP)  
+    
+    - _C. difficile_ infection  
+  
+- What bacterial community features aid diagnosis of infection?    
+  
+  
+]  
+
+
+---
+
+## Pilot Study: Bacterial Ecology of VAP          
+  
+.pad-left[  
+  
+- **Aim**: respiratory bacterial community change during critical illness &amp; ventilation  
+
+- **Population**: 15 adult subjects admitted to medical ICU  
+    
+- **Sampling**: upper &amp; lower respiratory q48-72h for 16S rRNA gene sequencing  
+    
+- **Comparison**: healthy controls sampled via bronchoscopy  
+    
+- **Outcome**: change in community composition, ventilator-associated pneumonia (VAP)
+  
+]  
+
+.footnote-left[Kelly et al _Microbiome_ 2016]  
+
+
+---
+background-image: url(figs/kelly_microbiome_2016_heatmap.png)
+background-size: 65%
+
+
+
+.footnote-left[Kelly et al _Microbiome_ 2016]  
+
+
+---
+background-image: url(figs/kelly_microbiome_2016_boxplot.png)
+background-size: 65%
+
+
+
+.footnote-left[Kelly et al _Microbiome_ 2016]  
+
+
+---
+
+## Validation Study: Bacterial Ecology of VAP          
+  
+.pad-left[  
+  
+- **Aim**: respiratory microbiome disruption indices (MDIs) to predict VAP  
+
+- **Population**: 84 long-term acute care (LTACH) patients on mechanical ventilation    
+    
+- **Sampling**: upper &amp; lower respiratory q24-48h (1066 specimens for 16S &amp; qPCR)  
+    
+- **Comparison**: within-subject change over time    
+    
+- **Outcome**: VAP (with sensitivity analysis)  
+  
+]  
+
+.footnote-left[Harrigan et al _CID_ 2021]  
+
+
+---
+background-image: url(figs/harrigan_cid_2021_oddsratio.png)
+background-size: 65%
+
+
+
+.footnote-left[Harrigan et al _CID_ 2021]  
+
+
+---
+background-image: url(figs/harrigan_cid_2021_outcomes.png)
+background-size: contain
+
+
+
+.footnote-left[Harrigan et al _CID_ 2021]  
+
+
+---
+  
+## Island Biogeography &amp; Lung Microbial Ecology    
+  
+.pull-left[
+
+&lt;img src="img/AnnalsATS.201501-029OC_f2.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/lung_microbiome_adapted_island_model.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+  
+- lower respiratory tract an "island" off shore of the upper respiratory tract &amp; gut     
+
+- lung microbiome more influenced by microbial immigration and elimination  
+
+- local growth conditions impact bacterial reproduction rates in disease    
+  
+  
+]
+
+
+
+.footnote-left[Dickson RP et al _Annals ATS_ 2015]
+
+
+
+---
+
+## Bacterial Ecology of _C. difficile_ Infection            
+  
+.pad-left[  
+  
+- **Aim**: microbiome features that discriminate _C. difficile_ colonization / infection    
+
+- **Population**: 384 consecutive positive _C. difficile_ tests (in- &amp; outpatient)   
+    
+<div id="ijwnycccbz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ijwnycccbz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #000000;
+}
+
+#ijwnycccbz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #000000;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #000000;
+}
+
+#ijwnycccbz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ijwnycccbz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ijwnycccbz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+}
+
+#ijwnycccbz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ijwnycccbz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ijwnycccbz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ijwnycccbz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ijwnycccbz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ijwnycccbz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ijwnycccbz .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ijwnycccbz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: middle;
+}
+
+#ijwnycccbz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ijwnycccbz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ijwnycccbz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #000000;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #000000;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ijwnycccbz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #000000;
+  padding-left: 12px;
+}
+
+#ijwnycccbz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ijwnycccbz .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+}
+
+#ijwnycccbz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ijwnycccbz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+}
+
+#ijwnycccbz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ijwnycccbz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+}
+
+#ijwnycccbz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ijwnycccbz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#ijwnycccbz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ijwnycccbz .gt_sourcenote {
+  font-size: 11px;
+  padding: 4px;
+}
+
+#ijwnycccbz .gt_left {
+  text-align: left;
+}
+
+#ijwnycccbz .gt_center {
+  text-align: center;
+}
+
+#ijwnycccbz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ijwnycccbz .gt_font_normal {
+  font-weight: normal;
+}
+
+#ijwnycccbz .gt_font_bold {
+  font-weight: bold;
+}
+
+#ijwnycccbz .gt_font_italic {
+  font-style: italic;
+}
+
+#ijwnycccbz .gt_super {
+  font-size: 65%;
+}
+
+#ijwnycccbz .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><i>C. difficile</i><br>Category</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Subject<br>Count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Proportion</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">GDH+ Toxin EIA- NAAT-</td>
+<td class="gt_row gt_right">94</td>
+<td class="gt_row gt_right">24.5&percnt;</td></tr>
+    <tr><td class="gt_row gt_left">GDH+ Toxin EIA- NAAT+</td>
+<td class="gt_row gt_right">213</td>
+<td class="gt_row gt_right">55.5&percnt;</td></tr>
+    <tr><td class="gt_row gt_left">GDH+ Toxin EIA+</td>
+<td class="gt_row gt_right">77</td>
+<td class="gt_row gt_right">20.1&percnt;</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+    
+- **Sampling**: stool 16S rRNA gene sequencing &amp; 16S rRNA gene qPCR  
+    
+- **Comparison**: toxin EIA+ (infection) versus NAAT+ only (colonization)     
+    
+- **Outcome**: EIA+, with fecal lactoferrin as sensitivity analysis    
+  
+]  
+
+.footnote-left[Tkatch et al _ASM World Microbiome Forum_ 2021]  
+
+
+---
+background-image: url(figs/p_cdi_cat_fecal_lacto_boxplot_tp.png)
+background-size: 65%
+
+
+.footnote-left[Tkatch et al _ASM World Microbiome Forum_ 2021]  
+
+
+---
+background-image: url(figs/p_toxineia_clostridioides_boxplot_tp.png)
+background-size: 65%
+
+
+.footnote-left[Tkatch et al _ASM World Microbiome Forum_ 2021]  
+
+
+---
+
+## The Bacterial Ecology of Infection          
+  
+.pad-left[  
+  
+- Bacterial infection associated with dominance of single strain:  
+
+    - ventilator-associatec pneumonia (VAP)  
+    
+    - _C. difficile_ infection  
+  
+- Low diversity predicts the risk for respiratory infection  
+  
+- **Low diversity / dominance → &lt;u&gt;repopulation&lt;/u&gt;**
+  
+]  
+
+.footnote-left[Dickson _Eur Resp J_ 2018; Sulaiman et al _Eur Resp J_ 2018]  
+
+
+---
+class: top left hide-count
+background-image: url(img/cdc-y--8fqaK1kY-unsplash.jpeg)
+background-size: cover
+
+.pull-farright[
+## &lt;span style='color: #c7b8e3'&gt;Antibiotics &amp; Empty Islands&lt;/span&gt;  
+]
+
+.footnote-right[&lt;span style='color: black'&gt;photo: CDC @unsplash&lt;/span&gt;]  
+
+
+
+---
+
+## Antibiotics &amp; Empty Islands          
+  
+.pad-left[  
+  
+- How do different antibiotics impact gut &amp; respiratory bacterial communities?    
+  
+    - well defined spectrum of activity in vitro  
+    
+    - complex interactions in vivo  
+  
+- Implications of antibiotic selection &amp; duration for repopulation?    
+  
+]  
+
+
+---
+
+## Impact of Antibiotics During Induction Chemotherapy    
+
+.pad-left[
+
+- **Aim**: impact of antibiotics on gut microbiome during chemo/SCT admission      
+
+- **Population**: 60 adults with acute myeloid leukemia (42%) or multiple myeloma (37%)    
+    
+- **Sampling**: stool specimens for 16S rRNA gene sequencing    
+    
+- **Comparison**: across antibiotic classes    
+    
+- **Outcome**: bacterial community diversity &amp; membership    
+  
+]
+
+.footnote-left[Ziegler et al _OFID_ 2019]  
+
+
+---
+background-image: url(figs/ziegler_ofid_2019_flow.png)
+background-size: contain
+
+
+
+.footnote-left[Ziegler et al _OFID_ 2019]  
+
+---
+background-image: url(figs/ziegler_ofid_2019_table.png)
+background-size: contain
+
+
+
+.footnote-left[Ziegler et al _OFID_ 2019]  
+
+
+---
+background-image: url(figs/ziegler_ofid_2019_pcoa.png)
+background-size: contain
+
+
+
+.footnote-left[Ziegler et al _OFID_ 2019]  
+
+---
+
+## Antibiotics &amp; Risk for Pseudomonas Recurrence      
+
+.pad-left[
+
+- **Aim**: define &lt;u&gt;post-antibiotic&lt;/u&gt; factors a/w risk for recurrent _Pseudomonas_ VAP  
+
+- **Population**: 84 long-term acute care (LTACH) patients on mechanical ventilation    
+    
+- **Sampling**: lower respiratory metagenomic sequencing &amp; culture for WGS   
+    
+- **Comparison**: subjects with and without recurrent _Pseudomonas_ infection      
+    
+- **Outcome**: recurrent _Pseudomonas_ VAP    
+  
+]
+
+
+---
+background-image: url(figs/r01_psa_persistence.png)
+background-size: 65%
+
+
+.footnote-left[Harrigan et al. Manuscript in preparation.]  
+
+
+---
+background-image: url(figs/r01_psa_SNV.png)
+background-size: 65%
+
+
+.footnote-left[Harrigan et al. Manuscript in preparation.]  
+
+
+---
+background-image: url(figs/r01_psa_strep.png)
+background-size: 65%
+
+
+.footnote-left[Harrigan et al. Manuscript in preparation.]  
+
+
+---
+
+## Environmental Microbiome &amp; Repopulation              
+  
+.pad-left[
+  
+- **Aim**: define environmental multidrug-resistant organism (MDROs) contamination    
+
+- **Population**: 51 hospital rooms with MDRO-associated patient admitted      
+    
+- **Sampling**: composite near, intermediate, far swabs for culture &amp; 16S     
+    
+- **Comparison**: bacterial contamination &amp; MDRO detection by distance         
+    
+- **Outcome**: culturable MDRO from the healthcare environment       
+  
+]
+
+.footnote-left[Kelly et al _ICHE_ 2021]  
+
+
+---
+background-image: url(figs/kelly_iche_2021_cx.png)
+background-size: contain
+
+
+.footnote-left[Kelly et al _ICHE_ 2021]  
+
+
+---
+background-image: url(figs/kelly_iche_2021_gram.png)
+background-size: contain
+
+
+.footnote-left[Kelly et al _ICHE_ 2021]  
+
+
+---
+background-image: url(figs/kelly_iche_2021_asv.png)
+background-size: contain
+
+
+.footnote-left[Kelly et al _ICHE_ 2021]  
+
+
+---
+
+## Antibiotics &amp; Empty Islands          
+  
+.pad-left[  
+  
+- Large effects of antibiotic selection on post-antibiotic gut community:    
+  
+    - differences betwen BSBL, levofloxacin, oral vancomycin  
+  
+- Differential repopulation impacts _Pseudomonas_ re-infection risk    
+
+- **Passive repopulation ← MDRO-rich environmental microbiome**
+  
+]  
+
+
+---
+class: top left hide-count
+background-image: url(img/PMT3_pop.jpeg)
+background-size: cover
+
+.move-bottom35-center[
+## &lt;span style='color: #ffe9d6'&gt;Engineering Post-Antibiotic Repopulation&lt;/span&gt;  
+]
+
+.footnote-right[&lt;span style='color: black'&gt;photo: Laura Cowden&lt;/span&gt;]  
+
+
+
+---
+
+## Microbial Community Engineering  
+  
+.pad-left[
+
+- How can we control bacterial community succession in the post-antibiotic period?  
+
+- What is the effect of fecal microbiota transplant (FMT)?  
+
+- What is the effect of bacteriophage therapy?  
+
+]
+
+.footnote-left[Seekatz et al _mBio_ 2014; Dedrick et al _Nature Med_ 2019]  
+
+
+---
+
+## Fecal Microbiota Transplant (FMT)  
+  
+.pad-left[
+
+- **Aim**: define the utility of FMT for severe/complicated _C. difficile_ infection    
+
+- **Population**: 24 subjects with severe/complicated CDI      
+    
+- **Intervention**: Penn Microbiome Therapy (PMT) -001, -002, -003  
+    
+- **Control**: standard of care antibiotic treatment      
+    
+- **Outcome**: time to resolution of severe CDI symptoms    
+
+]
+
+.footnote-left[Dutcher et al. Manuscript in preparation.]  
+
+
+---
+background-image: url(figs/p_fmt_richness_tp.png)
+background-size: 65%
+
+
+.footnote-left[Dutcher et al. Manuscript in preparation.]  
+
+---
+
+## Endogenous Inducible Prophage (EIP)  
+
+.pad-left[
+
+- **Aim**: define the impact of prophage induction on _Pseudomonas_ VAP risk      
+
+- **Population**: 45 LTACH subjects with _Pseudomonas_ from lower respiratory culture       
+    
+- **Sampling**: lower respiratory metagenomic sequencing, culture for phage induction       
+    
+- **Comparison**: _Pseudomonas_ with or without inducible prophage          
+    
+- **Outcome**: time to eradication of _Pseudomonas_ from lower respiratory tract       
+  
+]
+
+
+.footnote-left[Loughrey et al. Manuscript in preparation.]  
+
+
+---
+background-image: url(figs/r01_phage_growth.png)
+background-size: 65%
+
+
+.footnote-left[Loughrey et al. Manuscript in preparation.]  
+
+
+---
+background-image: url(figs/r01_phage_table.png)
+background-size: 65%
+
+
+.footnote-left[Loughrey et al. Manuscript in preparation.]  
+
+
+---
+
+## Microbial Community Engineering  
+  
+.pad-left[
+
+- Post-antibiotic bacterial community succession can be altered by:
+
+    - introduction of bacterial communities via FMT
+    
+    - induction of integrated bacteriophage (or introduction of ) 
+
+- Two models for engineering post-antibiotic bacterial communities:
+
+    - antibiotic conditioning &amp; transplant  
+    
+    - post-induction consolidation therapy with bacteriophage    
+
+]
+
+
+---
+class: top left hide-count
+background-image: url(img/christina-victoria-craft-WHSnkIwWpec-unsplash.jpeg)
+background-size: cover
+
+## &lt;span style='color: #226252'&gt;Conclusion: Into the 'LBP' Era&lt;/span&gt;  
+
+
+.footnote-right[&lt;span style='color: white'&gt;photo: Christina Victoria Craft @unsplash&lt;/span&gt;]  
+
+
+
+---
+
+## Live Biotherapeutic Products (LBPs)    
+
+.pull-left[
+
+&lt;img src="img/ser_109_nejm.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.pull-right[
+  
+- first approval expected 2022:    
+
+    - Seres, Rebiotix, Vedanta, Finch  
+    
+- applications:  
+
+    - _C. difficile_  
+    
+    - IBD  
+    
+    - PD-1 potentiation  
+    
+    - MDRO colonization  
+    
+    - food allergy   
+
+]
+
+.footnote-left[Feuerstadt et al _NEJM_ 2022]  
+
+---
+
+## Conclusions    
+  
+.pad-left[
+
+- Bacterial infections like VAP, _C. difficile_ are characterized by low-diversity / dominance, emphasizing the importance of post-treatment repopulation.  
+
+- Antibiotics exacerbate low-diversity state in a class-dependent manner.  
+
+- Late reinfection may represent a failure of &lt;u&gt;post-antibiotic repopulation&lt;/u&gt;. Passive repopulation from the healthcare environment risks MDRO colonization.    
+  
+- FMT/LBPs and bacteriophage therapy (exogenous or induced) are methods by which we can exert control over post-antibiotic repopulation and prevent recurrent infection.        
+  
+]
+
+
+---
+
+## Acknowledgements    
+
+.pull-left[
+- __ARES Group @ Penn__
+Laurel Glaser, Kyle Rodino, Sean Loughrey, Laura Cowden,   
+Magda Wernovsky, Jennifer Han, Erik Clarke, Michael David,
+Matt Ziegler, Lauren Dutcher, Ebbing Lautenbach, Jim Harrigan, Hatem Abdallah
+
+- __Bushman Laboratory @ Penn__
+Arwa Abbas, Aoife Roche, Andrew Marques,
+Aubrey Bailey, Jacob Leiby,
+Rick Bushman
+
+- __PennCHOP Microbiome Program__
+Lisa Mattei, Casey Hofstaedter, Huanjia Zhang, Kyle Bittinger
+
+]
+
+
+.pull-right[
+- __Collman Laboratory @ Penn__
+Ize Imai, Aurea Simon Soro, John McGinniss, Ron Collman
+
+- __Division of ID @ Penn__
+Ian Frank, Pablo Tebas, Robert Gross, Emily Blumberg
+
+- __Rutgers University &amp; Penn DBEI__
+Jason Roy, Arman Oganisian
+  
+- __CDC Prevention Epicenters__
+Clifford McDonald, Alison Laufer Halpin
+  
+- __Funding__
+&lt;u&gt;CDC&lt;/u&gt;: BAAs 200-2016-91964, 200-2018-02919, 200-2021-10986,
+200-2021-10986 &amp; &lt;u&gt;NIAID&lt;/u&gt;: K23 AI121485
+
+]
+
+.center[
+### brendank@pennmedicine.upenn.edu
+]
+
+
+
+---
+class: middle center hide-count
+background-image: url(img/giorgio-trovato-IclGoWB6wEY-unsplash.jpg)
+background-size: cover
+
+.title-subtext[Questions?]
+
+.callout-url-bottom[  
+.fade-in[&lt;span style="font-size:0.5em; color:white"&gt;slides ↓ &lt;/span&gt;]  
+&lt;span style="link-color:white"&gt;[bjklab.org](http://www.bjklab.org)&lt;/span&gt;  
+]  
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
