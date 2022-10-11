@@ -539,7 +539,10 @@ knitr::include_graphics(path = "img/lung_microbiome_adapted_island_model.png")
     
 ```{r, warning=FALSE, error=FALSE, echo=FALSE, message=FALSE}
 
-read_rds("./tabs/cd_specimen_count.rds") %>%
+read_csv("./tabs/cd_specimen_count.csv") %>%
+  gt() %>%
+  gt::cols_label(cdiff_category = html("<i>C. difficile</i><br>Category"), n = html("Subject<br>Count")) %>%
+  gt::fmt_percent(columns = "Proportion", decimals = 1) %>%
     tab_options(column_labels.font.size = 16,
                 column_labels.font.weight = "bold",
                 table.font.size = 16) %>%
